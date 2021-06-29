@@ -1,0 +1,74 @@
+<h3> 2020 - Post Coronavirus Twitter Trends </h3>
+<br/>
+<div class = "row">
+    <div class = "col-4">
+        <div id="chartdivtwittermap" style="width: 100%; height: 500px"></div>
+        <div class="row legend"><div class="col labor">&#8226;Labor</div><div class="col liberal">&#8226;Liberal</div></div>
+    </div>
+    <div class = "col-8">
+        <p> Political popularity of premiers has been calculated using sentiment analysis on more than 80000 tweets. <br/>
+        The sentiment analyzer characterises tweets from various tweet as follows:<br/></p>
+        <table class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">State</th>
+                <th scope="col">Premier</th>
+                <th scope="col">Positive Tweets</th>
+                <th scope="col">Negative Tweets</th>
+                <th scope="col">Twitter Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Victoria</th>
+                <th scope="row">Daniel Andrews</th>
+                <td>{{VICLab}}</td>
+                <td>{{VICLib}}</td>
+                <td>@DanielAndrewsMP</td>
+              </tr>
+              <tr>
+                <th scope="row">New South Wales</th>
+                <th scope="row">Gladys Berejiklian</th>
+                <td>{{NSWLib}}</td>
+                <td>{{NSWLab}}</td>
+                <td>@GladysB</td>
+              </tr>
+              <tr>
+                <th scope="row">Queensland</th>
+                <th scope="row">Annastacia Palaszczuk</th>
+                <td>{{QLDLab}}</td>
+                <td>{{QLDLib}}</td>
+                <td>@AnnastaciaMP</td>
+              </tr>
+              <tr>
+                <th scope="row">Western Australia</th>
+                <th scope="row">Mark McGowan</th>
+                <td>{{WALab}}</td>
+                <td>{{WALib}}</td>
+                <td>@MarkMcGowanMP</td>
+              </tr>
+              <tr>
+                <th scope="row">Southern Australia</th>
+                <th scope="row">Steven Marshall</th>
+                <td>{{SALib}}</td>
+                <td>{{SALab}}</td>
+                <td>@marshall_steven</td>
+              </tr>
+              <tr>
+                <th scope="row">Tasmania</th>
+                <th scope="row">Peter Gutwein</th>
+                <td>{{TASLib}}</td>
+                <td>{{TASLab}}</td>
+                <td>@PeterGutwein</td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="card bg-light mb-3 textblack" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Total Tweets (Positive/ Negative) : {{totalTweets}}</h5>
+              <hr>
+              <p class="card-text text-muted">These represent only the tweets that were seen to contain any sentiment - positive or negative. Total number of tweets harvested have a large number of neutral tweets.</p>
+            </div>
+          </div>
+    </div>
+</div>
