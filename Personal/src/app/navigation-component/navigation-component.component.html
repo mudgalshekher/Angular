@@ -1,0 +1,12 @@
+<div class="customcard">
+    <h2>Welcome Back, {{this.firstName}}!</h2><br/>
+    <ol> 
+    Overall progress in subscribed courses:
+    <li *ngFor="let item of items">
+        <strong> {{item.Name}} </strong> : {{item.Completion}}%
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: {{item.Completion}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </li>
+    </ol>
+</div>
